@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandru B | Web Developer</title>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Add this to your <head> -->
+    <style>
+        :root {
+          --grid-color: rgba(106, 17, 203, 0.15);
+          --grid-size: 50px;
+        }
+        body {
+          background: 
+            linear-gradient(var(--grid-color) 1px, transparent 1px),
+            linear-gradient(90deg, var(--grid-color) 1px, transparent 1px),
+            #f8f9fa;
+          background-size: var(--grid-size) var(--grid-size);
+        }
+        [data-theme="dark"] body {
+          --grid-color: rgba(161, 114, 255, 0.1);
+          background-color: #121212;
+        }
+      </style>
+</head>
+<body>
+
+    
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">CB</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              <span class="greeting">Hi, I'm</span>
+              <span class="name">Chandru B</span>
+              <span class="wave">👋</span>
+            </h1>
+            <h2 class="hero-subtitle typing-animation"></h2>
+            <p class="hero-description">I build <span class="highlight">immersive</span> web experiences</p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                <span>View My Work</span>
+                <i class="fas fa-arrow-down"></i>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span>Hire Me</span>
+                <i class="fas fa-paper-plane"></i>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Your Photo Integration -->
+          <div class="hero-3d">
+            <div class="photo-container">
+              <img src="images/Chandru.png" alt="Chandru B" class="floating-photo">
+              <div class="photo-shadow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who am I?</h3>
+                    <p>I'm Chandru B, a passionate Website developer with expertise in creating modern, responsive websites and web applications. I specialize in turning ideas into beautifully crafted digital experiences.</p>
+                    <p>With a keen eye for design and a strong focus on performance, I build websites that not only look great but also deliver exceptional user experiences.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="number" data-count="5">0</span>+
+                            <span class="label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number" data-count="5">0</span>+
+                            <span class="label">Clients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number" data-count="1">0</span>+
+                            <span class="label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My <span>Projects</span></h2>
+            <div class="projects-grid">
+                <!-- Attendance Management System -->
+<div class="project-card">
+    <div class="project-image">
+        <img src="images/Attendance-management.jpg" alt="Attendance Management System">
+        <div class="project-links">
+            <a href="https://atteandance-system.great-site.net/" class="project-link" aria-label="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="https://github.com/itzchandru/GCE_Attendance_management" class="project-link" aria-label="GitHub Repository">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+    <div class="project-info">
+        <h3>Attendance Management System</h3>
+        <p>A digital solution enabling faculty to mark attendance while administrators can monitor, generate reports, and analyze attendance patterns efficiently.</p>
+        <div class="project-tech">
+            <span>React.js</span>
+            <span>PHP</span>
+            <span>MYSQL</span>
+            <span>JWT Auth</span>
+        </div>
+    </div>
+</div>
+                
+                <!-- Alumni Election Website -->
+<div class="project-card">
+    <div class="project-image">
+        <img src="images/alumni election.avif" alt="Alumni Election System Dashboard">
+        <div class="project-links">
+            <a href="#" class="project-link" aria-label="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="#" class="project-link" aria-label="GitHub Repository">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+    <div class="project-info">
+        <h3>Alumni Election Portal</h3>
+        <p>A secure online voting platform for alumni associations featuring candidate profiles, real-time results, and voter authentication.</p>
+        <div class="project-tech">
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>JWT Auth</span>
+            <span>Chart.js</span>
+            <span>SendGrid</span>
+        </div>
+    </div>
+</div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/prozone.jpg" alt="Task Manager">
+                        <div class="project-links">
+                            <a href="https://prozonepalms.com/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Prozone Palms Website</h3>
+                        <p>A Apartment and flats booking website in coimbatore with user dashboard.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-more">
+                <a href="#" class="btn btn-outline">
+                    <span>View All Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My <span>Skills</span></h2>
+            
+                
+                <div class="skills-list">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-level="95"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                                <!-- CSS -->
+                                <div class="skill-item">
+                                  <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                                  <div class="skill-info">
+                                    <span class="skill-name">CSS</span>
+                                    <div class="skill-bar">
+                                      <div class="skill-progress" data-level="90"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <!-- JavaScript -->
+                                <div class="skill-item">
+                                  <div class="skill-icon"><i class="fab fa-js"></i></div>
+                                  <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <div class="skill-bar">
+                                      <div class="skill-progress" data-level="85"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <!-- Bootstrap -->
+                                <div class="skill-item">
+                                  <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                                  <div class="skill-info">
+                                    <span class="skill-name">Bootstrap</span>
+                                    <div class="skill-bar">
+                                      <div class="skill-progress" data-level="80"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <!-- Tailwind CSS -->
+                                <div class="skill-item">
+                                  <div class="skill-icon"><img src="./images/tailwind.png" alt="Tailwind CSS"></div>
+                                  <div class="skill-info">
+                                    <span class="skill-name">Tailwind CSS</span>
+                                    <div class="skill-bar">
+                                      <div class="skill-progress" data-level="75"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <!-- ReactJS -->
+                                <div class="skill-item">
+                                  <div class="skill-icon"><i class="fab fa-react"></i></div>
+                                  <div class="skill-info">
+                                    <span class="skill-name">ReactJS</span>
+                                    <div class="skill-bar">
+                                      <div class="skill-progress" data-level="88"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <!-- Add more frontend skills -->
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-level="80"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+            
+                                <!-- Java -->
+                                <div class="skill-item">
+                                  <div class="skill-icon"><i class="fab fa-java"></i></div>
+                                  <div class="skill-info">
+                                    <span class="skill-name">Java</span>
+                                    <div class="skill-bar">
+                                      <div class="skill-progress" data-level="75"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <!-- PHP -->
+                                <div class="skill-item">
+                                  <div class="skill-icon"><i class="fab fa-php"></i></div>
+                                  <div class="skill-info">
+                                    <span class="skill-name">PHP</span>
+                                    <div class="skill-bar">
+                                      <div class="skill-progress" data-level="70"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <!-- MySQL -->
+                                <div class="skill-item">
+                                  <div class="skill-icon"><img src="./images/mysql.png" alt="MySQL"></div>
+                                  <div class="skill-info">
+                                    <span class="skill-name">MySQL</span>
+                                    <div class="skill-bar">
+                                      <div class="skill-progress" data-level="85"></div>
+                                    </div>
+                                  </div>
+                                </div>
+            
+                        </div>
+                    </div>
+                
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm currently available for freelance work. If you have a project you want to get started or think you need my help with something, then get in touch.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>itzchandru1@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 86675 72494</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Sivaganga, Tamil nadu</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/itzchandru" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/chandrub/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/ItzChandru4" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/im__chandru__/" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+
+                  <form id="contactForm" action="send-email.php" method="POST">
+                    <!-- Add these hidden inputs -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+                    <input type="hidden" name="_template" value="table">
+                    
+                    
+                      <!-- Name Field -->
+                      <div class="form-group floating-label">
+                          <input 
+                              type="text" 
+                              id="name" 
+                              name="name" 
+                              required
+                              pattern=".{3,}"
+                              title="Minimum 3 characters"
+                              autocomplete="name"
+                          >
+                          <label for="name">Your Name</label>
+                          <div class="validation-error"></div>
+                          <i class="fas fa-user input-icon"></i>
+                      </div>
+              
+                      <!-- Email Field -->
+                      <div class="form-group floating-label">
+                          <input 
+                              type="email" 
+                              id="email" 
+                              name="email" 
+                              required
+                              autocomplete="email"
+                          >
+                          <label for="email">Your Email</label>
+                          <div class="validation-error"></div>
+                          <i class="fas fa-envelope input-icon"></i>
+                      </div>
+              
+                      <!-- Subject Field -->
+                      <div class="form-group floating-label">
+                          <input 
+                              type="text" 
+                              id="subject" 
+                              name="subject" 
+                              required
+                              pattern=".{5,}"
+                              title="Minimum 5 characters"
+                          >
+                          <label for="subject">Subject</label>
+                          <div class="validation-error"></div>
+                          <i class="fas fa-tag input-icon"></i>
+                      </div>
+              
+                      <!-- Message Field -->
+                      <div class="form-group floating-label">
+                          <textarea 
+                              id="message" 
+                              name="message" 
+                              rows="5" 
+                              required
+                              minlength="10"
+                              title="Minimum 10 characters"
+                          ></textarea>
+                          <label for="message">Your Message</label>
+                          <div class="validation-error"></div>
+                          <i class="fas fa-comment input-icon"></i>
+                          <div class="char-counter"><span>0</span>/500</div>
+                      </div>
+              
+                      <!-- Submit Button -->
+                      <button type="submit" class="btn btn-primary pulse-on-hover">
+                          <span>Send Message</span>
+                          <i class="fas fa-paper-plane"></i>
+                      </button>
+              
+                      <!-- Form Status -->
+                      <div class="form-status"></div>
+                  </form>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#">CB</a>
+                    <p>Full stack Developer & Web Designer</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="#">Web Development</a>
+                        <a href="#">UI/UX Design</a>
+                        <a href="#">Responsive Design</a>
+                        <a href="#">Web Optimization</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="https://github.com/itzchandru">GitHub</a>
+                        <a href="https://www.linkedin.com/in/chandrub/">LinkedIn</a>
+                        <a href="https://x.com/ItzChandru4">Twitter</a>
+                        <a href="https://www.instagram.com/im__chandru__/">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Chandru B. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/three.min.js"></script>
+    <script src="js/GLTFLoader.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Add before </body> -->
+<div class="geometric-decor">
+    <div class="shape triangle"></div>
+    <div class="shape circle"></div>
+    <div class="shape square"></div>
+  </div>
+  
+  <style>
+  .geometric-decor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .shape {
+    position: absolute;
+    opacity: 0.1;
+    filter: blur(1px);
+  }
+  
+  .triangle {
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: var(--primary-color);
+    top: 10%;
+    right: 5%;
+    animation: float 15s infinite ease-in-out;
+  }
+  
+  .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    bottom: 20%;
+    left: 10%;
+    animation: float 12s infinite ease-in-out reverse;
+  }
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    background: #23d5ab;
+    top: 50%;
+    left: 80%;
+    transform: rotate(45deg);
+    animation: float 18s infinite ease-in-out;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-50px) rotate(5deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+  }
+  </style>
+
+<div class="geometric-parallax">
+  <div class="parallax-layer" style="--layer-scale: 0.8; --parallax-speed: 0.2;"></div>
+  <div class="parallax-layer" style="--layer-scale: 1.2; --parallax-speed: 0.4;"></div>
+</div>
+
+<!-- Add before </body> -->
+<div class="cursor-3d"></div>
+<div class="cursor-trail"></div>
+<div class="cursor-particles"></div>
+
+
+
+</body>
+</html>
